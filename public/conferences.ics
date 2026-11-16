@@ -1,0 +1,277 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Management Deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Management Deadlines
+BEGIN:VEVENT
+UID:siop-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:SIOP 2027 — Submission Deadline
+DESCRIPTION:Society for Industrial and Organizational Psychology Annual Conference | https://www.siop.org/events/the-annual-conference/program/call-for-proposals/overview-from-the-chair/
+URL:https://www.siop.org/events/the-annual-conference/program/call-for-proposals/overview-from-the-chair/
+DTSTART;TZID=America/New_York:20261007T170000
+DTEND;TZID=America/New_York:20261007T170000
+END:VEVENT
+BEGIN:VEVENT
+UID:iacmr-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:IACMR 2027 — Submission Deadline
+DESCRIPTION:International Association for Chinese Management Research Biennial Conference | https://eng.iacmr.org/call-for-submissions%EF%BD%9C2027-iacmr-conference/
+URL:https://eng.iacmr.org/call-for-submissions%EF%BD%9C2027-iacmr-conference/
+DTSTART;TZID=Asia/Hong_Kong:20261026T120000
+DTEND;TZID=Asia/Hong_Kong:20261026T120000
+END:VEVENT
+BEGIN:VEVENT
+UID:aim-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AIM 2027 — Submission Deadline
+DESCRIPTION:AI in Management Conference | https://ob.aom.org/discussion/ai-in-management-aim-conference-2027-call-for-papers
+URL:https://ob.aom.org/discussion/ai-in-management-aim-conference-2027-call-for-papers
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+END:VEVENT
+BEGIN:VEVENT
+UID:eawop-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:EAWOP 2027 — Submission Deadline
+DESCRIPTION:European Congress of Work and Organizational Psychology | https://eawop.org/congress/biennial-congress-homepage
+URL:https://eawop.org/congress/biennial-congress-homepage
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+END:VEVENT
+BEGIN:VEVENT
+UID:aib-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AIB 2027 — Submission Deadline
+DESCRIPTION:Academy of International Business Annual Meeting | https://www.aib.world/2027-annual-meeting/contribute/submission-guide/
+URL:https://www.aib.world/2027-annual-meeting/contribute/submission-guide/
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+END:VEVENT
+BEGIN:VEVENT
+UID:aom-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AOM 2027 — Submission Deadline
+DESCRIPTION:Academy of Management Annual Meeting | https://www.aom.org/events/annual-meeting/submitting/call-for-submissions/
+URL:https://www.aom.org/events/annual-meeting/submitting/call-for-submissions/
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+END:VEVENT
+BEGIN:VEVENT
+UID:euram-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:EURAM 2027 — Submission Deadline
+DESCRIPTION:European Academy of Management Conference | https://conferences.euram.academy/2027conference/call-for-papers-2/
+URL:https://conferences.euram.academy/2027conference/call-for-papers-2/
+DTSTART;TZID=Europe/Brussels:20270112T140000
+DTEND;TZID=Europe/Brussels:20270112T140000
+END:VEVENT
+BEGIN:VEVENT
+UID:egos-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:EGOS 2027 — Submission Deadline
+DESCRIPTION:EGOS Colloquium | https://www.egos.org/2027_Liverpool/CALL_for_short_papers
+URL:https://www.egos.org/2027_Liverpool/CALL_for_short_papers
+DTSTART;TZID=Europe/Paris:20270115T120000
+DTEND;TZID=Europe/Paris:20270115T120000
+END:VEVENT
+BEGIN:VEVENT
+UID:aib-uki-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AIB UK&I 2027 — Submission Deadline
+DESCRIPTION:Academy of International Business UK & Ireland Chapter Conference | https://www.aib.world/event/aib-uk-ireland-2027-chapter-conference/
+URL:https://www.aib.world/event/aib-uk-ireland-2027-chapter-conference/
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+END:VEVENT
+BEGIN:VEVENT
+UID:iacm-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:IACM 2027 — Submission Deadline
+DESCRIPTION:International Association for Conflict Management Annual Conference | https://iafcm.org/cfp/
+URL:https://iafcm.org/cfp/
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+END:VEVENT
+BEGIN:VEVENT
+UID:sms-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:SMS 2027 — Submission Deadline
+DESCRIPTION:Strategic Management Society Annual Conference | https://www.strategicmanagement.net/conferences-events/annual-conference-2027/
+URL:https://www.strategicmanagement.net/conferences-events/annual-conference-2027/
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+END:VEVENT
+BEGIN:VEVENT
+UID:aib-canada-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AIB Canada 2027 — Submission Deadline
+DESCRIPTION:AIB Canada Chapter Conference | https://canada.aib.world/events/conferences/aib-canada-chapter-conference-2027-in-winnipeg/
+URL:https://canada.aib.world/events/conferences/aib-canada-chapter-conference-2027-in-winnipeg/
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+END:VEVENT
+BEGIN:VEVENT
+UID:aib-us-west-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AIB US West 2027 — Submission Deadline
+DESCRIPTION:AIB US West Chapter Conference | https://www.aib.world/event/aib-us-west-2027-chapter-conference/
+URL:https://www.aib.world/event/aib-us-west-2027-chapter-conference/
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+END:VEVENT
+BEGIN:VEVENT
+UID:ama-summer-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AMA Summer 2027 — Submission Deadline
+DESCRIPTION:AMA Summer Academic Conference | https://www.ama.org/2027-ama-summer-academic-conference-call-for-papers/
+URL:https://www.ama.org/2027-ama-summer-academic-conference-call-for-papers/
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+END:VEVENT
+BEGIN:VEVENT
+UID:asac-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:ASAC 2027 — Submission Deadline
+DESCRIPTION:Administrative Sciences Association of Canada Conference | https://asac.ca/conferences/submission-policies-and-guidelines/
+URL:https://asac.ca/conferences/submission-policies-and-guidelines/
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+END:VEVENT
+BEGIN:VEVENT
+UID:amcis-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:AMCIS 2027 — Submission Deadline
+DESCRIPTION:Americas Conference on Information Systems | https://amcis2027.aisconferences.org/submissions/call-for-minitrack-proposals/
+URL:https://amcis2027.aisconferences.org/submissions/call-for-minitrack-proposals/
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+END:VEVENT
+BEGIN:VEVENT
+UID:acr-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:ACR 2027 — Submission Deadline
+DESCRIPTION:Association for Consumer Research Annual Conference | https://acrwebsite.org/events/anaheim-acr-2027/
+URL:https://acrwebsite.org/events/anaheim-acr-2027/
+DTSTART;TZID=America/New_York:20270315T235900
+DTEND;TZID=America/New_York:20270315T235900
+END:VEVENT
+BEGIN:VEVENT
+UID:bcerc-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:BCERC 2027 — Submission Deadline
+DESCRIPTION:Babson College Entrepreneurship Research Conference | https://babson.edu/entrepreneurship-center/thought-leadership/babson-college-entrepreneurship-research-conference-bcerc/
+URL:https://babson.edu/entrepreneurship-center/thought-leadership/babson-college-entrepreneurship-research-conference-bcerc/
+DTSTART;TZID=America/New_York:20261014T235900
+DTEND;TZID=America/New_York:20261014T235900
+END:VEVENT
+BEGIN:VEVENT
+UID:druid-academy-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:DRUID Academy 2027 — Submission Deadline
+DESCRIPTION:DRUID Academy Conference | https://conference.druid.dk/Druid/?confId=73
+URL:https://conference.druid.dk/Druid/?confId=73
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+END:VEVENT
+BEGIN:VEVENT
+UID:eam-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:EAM 2027 — Submission Deadline
+DESCRIPTION:Eastern Academy of Management Conference | https://www.eaom.org/EAM-2027-Submission-Guidelines
+URL:https://www.eaom.org/EAM-2027-Submission-Guidelines
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+END:VEVENT
+BEGIN:VEVENT
+UID:ecis-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:ECIS 2027 — Submission Deadline
+DESCRIPTION:European Conference on Information Systems | https://ecis2027.uni.lu/call-for-submissions/
+URL:https://ecis2027.uni.lu/call-for-submissions/
+DTSTART;TZID=Europe/Paris:20261030T235900
+DTEND;TZID=Europe/Paris:20261030T235900
+END:VEVENT
+BEGIN:VEVENT
+UID:emac-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:EMAC 2027 — Submission Deadline
+DESCRIPTION:European Marketing Academy Annual Conference | https://emac2027.org/paper-special-sessions-submission/
+URL:https://emac2027.org/paper-special-sessions-submission/
+DTSTART;TZID=Europe/Rome:20261201T160000
+DTEND;TZID=Europe/Rome:20261201T160000
+END:VEVENT
+BEGIN:VEVENT
+UID:euroma-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:EurOMA 2027 — Submission Deadline
+DESCRIPTION:European Operations Management Association Conference | https://euroma27.org/call-for-papers/
+URL:https://euroma27.org/call-for-papers/
+DTSTART;TZID=Europe/London:20270114T120000
+DTEND;TZID=Europe/London:20270114T120000
+END:VEVENT
+BEGIN:VEVENT
+UID:ispim-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:ISPIM 2027 — Submission Deadline
+DESCRIPTION:ISPIM Innovation Conference | https://www.ispim-innovation.com/post/call-for-submissions-2027-ispim-innovation-conference
+URL:https://www.ispim-innovation.com/post/call-for-submissions-2027-ispim-innovation-conference
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+END:VEVENT
+BEGIN:VEVENT
+UID:ifera-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:IFERA 2027 — Submission Deadline
+DESCRIPTION:International Family Enterprise Research Academy Annual Conference | https://ifera.org/ifera-2027/call-for-papers/
+URL:https://ifera.org/ifera-2027/call-for-papers/
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+END:VEVENT
+BEGIN:VEVENT
+UID:poms-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:POMS 2027 — Submission Deadline
+DESCRIPTION:Production and Operations Management Society Annual Conference | https://www.poms.org/announcements
+URL:https://www.poms.org/announcements
+DTSTART;TZID=America/New_York:20261116T235900
+DTEND;TZID=America/New_York:20261116T235900
+END:VEVENT
+BEGIN:VEVENT
+UID:rnd-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:R&D Management 2027 — Submission Deadline
+DESCRIPTION:R&D Management Conference | https://www.rndtoday.co.uk/event/rd-management-conference-2027/
+URL:https://www.rndtoday.co.uk/event/rd-management-conference-2027/
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+END:VEVENT
+BEGIN:VEVENT
+UID:scp-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:SCP 2027 — Submission Deadline
+DESCRIPTION:Society for Consumer Psychology Annual Conference | https://myscp.org/news/30724/
+URL:https://myscp.org/news/30724/
+DTSTART;TZID=America/Los_Angeles:20260816T235900
+DTEND;TZID=America/Los_Angeles:20260816T235900
+END:VEVENT
+BEGIN:VEVENT
+UID:sole-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:SOLE 2027 — Submission Deadline
+DESCRIPTION:Society of Labor Economists Annual Meeting | https://www.sole-jole.org/
+URL:https://www.sole-jole.org/
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+END:VEVENT
+BEGIN:VEVENT
+UID:us-asbe-2027@management-deadlines.local
+DTSTAMP:20261116T000000Z
+SUMMARY:USASBE 2027 — Submission Deadline
+DESCRIPTION:United States Association for Small Business and Entrepreneurship Conference | https://www.usasbe.org/events/usasbe2027
+URL:https://www.usasbe.org/events/usasbe2027
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+END:VEVENT
+END:VCALENDAR

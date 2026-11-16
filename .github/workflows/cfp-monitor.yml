@@ -1,0 +1,70 @@
+name: Monitor official CFP pages
+on:
+  schedule:
+    - cron: '17 8 * * 1' # Monday 08:17 UTC; GitHub scheduled runs may be delayed
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: cfp-monitor
+  cancel-in-progress: false
+jobs:
+  review-cfp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check official pages (no paid APIs)
+        run: python scripts/check_cfp.py
+      - name: Open review issues, then save snapshots
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, tempfile
+          from pathlib import Path
+          r=json.loads(Path('data/cfp-check-report.json').read_text())
+          for c in r['changes']:
+              title=f"CFP change review: {c['id']} ({c['newDigest']})"
+              # Avoid duplicate alerts if a prior run already opened this exact change.
+              search=subprocess.run(['gh','issue','list','--state','all','--limit','200','--json','title'],capture_output=True,text=True,check=True)
+              if title in [i['title'] for i in json.loads(search.stdout)]:
+                  continue
+              text='\n'.join(['An official CFP page changed. **Review manually before changing any deadline.**',
+                              f"Conference: {c['name']}",f"Source: {c['url']}",
+                              f"Previous fingerprint: `{c['oldDigest']}`; new: `{c['newDigest']}`",
+                              '', '### Newly observed CFP text',
+                              *['- '+x for x in c['added']], '', '### Removed/changed CFP text',
+                              *['- '+x for x in c['removed']], '',
+                              'Compare against the official submission portal; update public/data/conferences.json only after verification.'])
+              with tempfile.NamedTemporaryFile('w',encoding='utf-8',delete=False) as f:
+                  f.write(text); path=f.name
+              try:
+                  subprocess.run(['gh','issue','create','--title',title,'--body-file',path],check=True)
+              finally:
+                  os.unlink(path)
+          if r['errors']:
+              print('Unreachable/unsupported pages require manual attention:')
+              for e in r['errors']:
+                  print(f"{e['id']}: {e['reason']} — {e['url']}")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cfp-snapshots.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh official CFP monitoring snapshots [skip ci]'
+            git push
+          fi
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfp-monitor-report
+          path: data/cfp-check-report.json
+          if-no-files-found: warn

@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+import conferences from '../../public/data/conferences.json';
+const seed = JSON.stringify(conferences).replace(/</g, '\\u003c');
+---
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b182b" />
+  <meta name="description" content="Management conference deadlines, official calls for papers, and calendar exports. 管理学学术会议征稿截止日期。" />
+  <title>Management Deadlines — 管理学会议投稿日历</title>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a href="/" class="brand" aria-label="Management Deadlines Home"><span class="logo">M<span>.</span></span><span class="brand-name">Management <strong>Deadlines</strong></span></a>
+      <nav class="top-links"><a href="#conferences" data-i18n="browse">会议目录</a><a href="#about" data-i18n="about">关于项目</a><button type="button" id="language" class="lang-btn" aria-label="Switch language">EN</button></nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="eyebrow">为管理学研究者打造</span></div>
+          <h1><span data-i18n="hero1">不错过每一次</span><br/><em data-i18n="hero2">学术机会。</em></h1>
+          <p data-i18n="intro">追踪全球管理学学术会议的投稿截止日期、官方征稿通知与重要时间节点。以组织行为、人力资源管理、战略与组织理论为核心。</p>
+          <div class="hero-actions"><a href="#conferences" class="primary-link" data-i18n="explore">探索会议 ↓</a><a href="/conferences.ics" class="secondary-link" id="allCalendar" data-i18n="calendar">订阅全部截止日期 ↗</a></div>
+          <div class="hero-foot"><span class="pulse"></span><span data-i18n="trust">人工核验优先 · 来源透明 · 免费使用</span></div>
+        </div>
+        <aside class="feature-panel"><div class="panel-top"><span data-i18n="nextDeadline">下一个已确认的截止日期</span><span class="mini-circle">↗</span></div><div class="feature-label" id="featureAcronym">—</div><h2 id="featureName">—</h2><div class="countdown" id="countdown">—</div><p class="feature-date" id="featureDate">—</p><div class="feature-bottom"><span id="featureStatus">—</span><a href="#conferences" data-i18n="viewDetails">查看详情 →</a></div></aside>
+      </section>
+      <section class="stats" aria-label="Conference counts"><div><strong id="totalCount">—</strong><span data-i18n="countConferences">已收录会议</span></div><div><strong id="verifiedCount">—</strong><span data-i18n="countVerified">有已核实截止日期</span></div><div><strong>0<span class="currency">¥</span></strong><span data-i18n="countCost">使用费用</span></div></section>
+      <section id="conferences" class="directory"><div class="section-head"><div><span class="overline" data-i18n="directoryLabel">CONFERENCE DIRECTORY</span><h2 data-i18n="directoryTitle">发现你的下一场会议</h2><p data-i18n="directoryDesc">截止日期由官方来源核实；未确认的日期不会被猜测或自动补全；部分条目仅完成会议系列收录。</p></div><button id="exportFavorites" class="outline-btn" data-i18n="exportFavorites">导出收藏日历 ↓</button></div>
+        <div class="filters"><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" data-i18n-placeholder="search" placeholder="搜索会议、学会、研究领域..." autocomplete="off" /></label><select id="area" aria-label="Research area"><option value="all">全部研究领域</option></select><select id="sort" aria-label="Sort"><option value="deadline" data-i18n="sortDate">按截止日期</option><option value="name" data-i18n="sortName">按会议名称</option></select></div>
+        <div class="tabs" role="group" aria-label="Category"><button class="tab selected" data-filter="all" data-i18n="tabAll">全部</button><button class="tab" data-filter="management" data-i18n="tabManagement">管理学</button><button class="tab" data-filter="economics" data-i18n="tabEconomics">经济学交叉</button><button class="tab" data-filter="favorites" data-i18n="tabFavorites">☆ 我的收藏</button></div>
+        <div class="results-label"><span id="resultsCount"></span><span data-i18n="legend">官方确认 / 待核实或待公布</span></div>
+        <div id="conferenceList" class="conference-list" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden><strong data-i18n="emptyTitle">暂无匹配的会议</strong><p data-i18n="emptyDesc">尝试调整关键词或筛选条件。</p></div>
+      </section>
+      <section id="about" class="about"><div><span class="overline" data-i18n="aboutLabel">BUILT FOR RESEARCHERS</span><h2 data-i18n="aboutTitle">少一点信息噪声，多一点研究时间。</h2></div><div><p data-i18n="aboutCopy">Management Deadlines 是一项免费、独立的学术信息整理项目。我们为每场会议保留官方来源与数据状态；尚未核实或尚未发布的截止日期会明确标注为“待核实 / 待公布”。收藏仅保存在当前浏览器，不会上传个人数据。</p><a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-i18n="github">使用 GitHub 管理数据 ↗</a></div></section>
+    </main>
+    <footer><span>© <span id="year">2026</span> Management Deadlines</span><span data-i18n="footer">Independent · Free · Source-first</span></footer>
+  </div>
+  <script type="application/json" id="conference-data" set:html={seed}></script>
+  <script src="../scripts/app.js"></script>
+</body></html>

@@ -1,0 +1,19 @@
+{
+  "name": "management-deadlines",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "npm run validate && npm run calendar && astro build",
+    "preview": "astro preview",
+    "check:data": "node scripts/validate.mjs",
+    "calendar": "node scripts/calendar.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.12",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
